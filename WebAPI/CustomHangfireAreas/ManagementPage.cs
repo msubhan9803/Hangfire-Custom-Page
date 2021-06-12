@@ -7,7 +7,7 @@ using Hangfire.Dashboard;
 using Hangfire.Dashboard.Pages;
 using Hangfire.Dashboard.Resources;
 
-namespace WebAPI.Pages
+namespace WebAPI.CustomHangfireAreas
 {
     public class ManagementPage : RazorPage
     {
@@ -17,7 +17,7 @@ namespace WebAPI.Pages
             Layout = new LayoutPage("Management");
 
             // Reading Html file
-            string html = File.ReadAllText("./Pages/management.html");
+            string html = File.ReadAllText("./CustomHangfireAreas/public/index.html");
 
             WriteLiteral(html);
         }

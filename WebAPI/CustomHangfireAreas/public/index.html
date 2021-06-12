@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-3">
+        <div id="sidebar-menu-left" class="list-group"></div>
+    </div>
+    <div class="col-md-9">
+        <div id="main-content-area" class="container">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div id="success-alert-area"></div>
+</div>
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        $("#sidebar-menu-left").load("./static/sidebar-menu.html");
+    })
+    $(function(){
+        $("#main-content-area").load("./static/main-content-area.html");
+    });
+    $(function(){
+        $("#success-alert-area").load("./static/success-alert.html");
+    });
+</script>
